@@ -49,7 +49,11 @@ export default class ClassesController {
       bio,
       subject,
       cost,
-      schedule
+      schedule,
+      youtube,
+      linkedin,
+      tiktok,
+      instagram
     } = request.body;
   
     const trx = await db.transaction();
@@ -60,6 +64,10 @@ export default class ClassesController {
         avatar,
         whatsapp,
         bio,
+        youtube,
+        linkedin,
+        tiktok,
+        instagram
       });
     
       const coach_id = insertedCoachesIds[0];

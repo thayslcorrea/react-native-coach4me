@@ -14,6 +14,7 @@ export interface Coach {
   name: string;
   subject: string;
   whatsapp: string;
+  instagram: string;
 }
 
 interface CoachItemProps {
@@ -34,6 +35,7 @@ const CoachItem: React.FC<CoachItemProps> = ({ coach }) => {
         <div>
           <strong>{coach.name}</strong>
           <span>{coach.subject}</span>
+          <span>Instagram: {coach.instagram}</span>
         </div>
       </header>
 

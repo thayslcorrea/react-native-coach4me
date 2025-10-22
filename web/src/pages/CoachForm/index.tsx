@@ -18,6 +18,10 @@ function CoachForm() {
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [whatsapp, setWhatsApp] = useState('');
+  const [youtube, setYoutube] = useState('');
+  const [linkedin, setLinkedin] = useState('');
+  const [tiktok, setTiktok] = useState('');
+  const [instagram, setInstagram] = useState('');
   const [bio, setBio] = useState('');
   
   const [subject, setSubject] = useState('');
@@ -56,13 +60,17 @@ function CoachForm() {
       bio,
       subject,
       cost,
-      schedule: scheduleItems
+      schedule: scheduleItems,
+      youtube,
+      linkedin,
+      tiktok,
+      instagram
     }).then(() => {
       alert('Cadastro realizado com sucesso!');
 
       history.push('/');
-    }).catch(() => {
-      alert('Erro no cadastro!');
+    }).catch((e) => {
+      alert(e);
     });
   }
 
@@ -95,6 +103,30 @@ function CoachForm() {
               label="WhatsApp" 
               value={whatsapp}
               onChange={(e) => { setWhatsApp(e.target.value) }}
+            />
+             <Input 
+              name="youtube" 
+              label="Youtube" 
+              value={youtube}
+              onChange={(e) => { setYoutube(e.target.value) }}
+            />
+             <Input 
+              name="linkedin" 
+              label="Linkedin" 
+              value={linkedin}
+              onChange={(e) => { setLinkedin(e.target.value) }}
+            />
+             <Input 
+              name="tiktok" 
+              label="Tiktok" 
+              value={tiktok}
+              onChange={(e) => { setTiktok(e.target.value) }}
+            />
+             <Input 
+              name="instagram" 
+              label="Instagram" 
+              value={instagram}
+              onChange={(e) => { setInstagram(e.target.value) }}
             />
             <Textarea 
               name="bio" 

@@ -1,0 +1,22 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/Users/thayslacerda/.nvm/versions/node/v18.18.0/bin/node',
+1 verbose cli   '/Users/thayslacerda/.nvm/versions/node/v18.18.0/bin/npm',
+1 verbose cli   'list',
+1 verbose cli   '-g',
+1 verbose cli   '--depth=0'
+1 verbose cli ]
+2 info using npm@3.10.10
+3 info using node@v18.18.0
+4 verbose stack TypeError: cb.apply is not a function
+4 verbose stack     at /Users/thayslacerda/.nvm/versions/node/v18.18.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:267:18
+4 verbose stack     at FSReqCallback.oncomplete (node:fs:211:5)
+5 verbose cwd /Users/thayslacerda/Documents/Codes/react-native-coach4me/server
+6 error Darwin 24.6.0
+7 error argv "/Users/thayslacerda/.nvm/versions/node/v18.18.0/bin/node" "/Users/thayslacerda/.nvm/versions/node/v18.18.0/bin/npm" "list" "-g" "--depth=0"
+8 error node v18.18.0
+9 error npm  v3.10.10
+10 error cb.apply is not a function
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]

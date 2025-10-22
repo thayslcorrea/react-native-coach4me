@@ -7,6 +7,10 @@ export async function up(knex: Knex) {
     table.string('avatar').notNullable();
     table.string('whatsapp').notNullable();
     table.string('bio').notNullable();
+    table.string('youtube').nullable();
+    table.string('linkedin').nullable();
+    table.string('tiktok').nullable();
+    table.string('instagram').nullable();
   });
 }
 
